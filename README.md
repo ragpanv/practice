@@ -115,3 +115,7 @@ Date:   Sun Mar 24 21:28:26 2024 +0530
 
 if you want to just rever it ( commit when ever you want explicitly)
 git revert -n commit_id ---> this reverts it and keep the previous latest in stagin area as below
+git reset --hard commit id
+HEAD is now at xxxxxxx asking age
+
+$ git log (now the latest commit is asking age, commits done after this are gone now)
