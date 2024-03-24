@@ -30,4 +30,5 @@ on git status ->  (use "git add <file>..." to update what will be committed)
 
     git status - show no changes as it is undone
 
-- if multiple files are changes, to undo it use . as git restore .
+- if multiple files are changed, to undo it use . as git restore .
+    git restore first.py README.md
