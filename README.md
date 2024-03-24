@@ -69,3 +69,6 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ---
+
+again user add cmd to add the required files to stagin area
+$ git add README.md
