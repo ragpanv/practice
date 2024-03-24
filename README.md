@@ -77,14 +77,19 @@ $ git add README.md
 $ git add first.py
 $ git commit -m 'added number line in py'
 $ git log   -- to check commited details
-commit <commit id> (HEAD -> main)  [recent commit]
+commit commit id (HEAD -> main)
 Author: abc
-Date:   Sun Mar 24 21:14:12 2024 +0530
+Date:   Sun Mar 24 21:24:39 2024 +0530
 
-    added number line in py
+    added print(45464645)
 
-commit <commit id> (origin/main, origin/HEAD)
+commit commitid (origin/main, origin/HEAD)
 Author: abc
-Date:   Sun Mar 24 21:10:31 2024 +0530
+Date:   Sun Mar 24 21:19:41 2024 +0530
 
-    README.md
+    new
+
+
+-- git checkout or restore won't work as it is already commited
+so revert cmd, it needs the commit id
+git revert <commit id>
