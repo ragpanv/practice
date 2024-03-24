@@ -1,5 +1,5 @@
 print('hello')
 name=input('what\'s you name :').strip()
 print('Hello ',name)
-print(45464645)
+print('numbers')
 print('Welcome')
