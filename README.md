@@ -77,19 +77,41 @@ $ git add README.md
 $ git add first.py
 $ git commit -m 'added number line in py'
 $ git log   -- to check commited details
-commit commit id (HEAD -> main)
+commit commit id (HEAD -> main)  --> in local system
 Author: abc
-Date:   Sun Mar 24 21:24:39 2024 +0530
+Date:   Sun Mar 24 21:28:26 2024 +0530
 
-    added print(45464645)
+    added number 45
 
-commit commitid (origin/main, origin/HEAD)
+commit commit id (origin/main, origin/HEAD)  --> in remote
 Author: abc
-Date:   Sun Mar 24 21:19:41 2024 +0530
+Date:   Sun Mar 24 21:27:22 2024 +0530
 
-    new
+    added println(numbers)
+
 
 
 -- git checkout or restore won't work as it is already commited
 so revert cmd, it needs the commit id
-git revert <commit id>
+git revert <commit id>   -- revert the change and commit it implicitly
+it shows the reverting things, type :q
+
+$ git log
+commit commit id (HEAD -> main)
+Author: abc
+Date:   Sun Mar 24 21:29:14 2024 +0530
+
+    #### Revert "added number 45"
+
+    This reverts commit commit id.
+
+commit commit id
+Author: abc
+Date:   Sun Mar 24 21:28:26 2024 +0530
+
+    added number 45
+
+
+
+if you want to just rever it ( commit when ever you want explicitly)
+git revert -n commit_id ---> this reverts it and keep the previous latest in stagin area as below
