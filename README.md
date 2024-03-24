@@ -71,3 +71,20 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 again user add cmd to add the required files to stagin area
 $ git add README.md
+
+#### undoing uncommited changes  (after git commit)
+
+$ git add first.py
+$ git commit -m 'added number line in py'
+$ git log   -- to check commited details
+commit <commit id> (HEAD -> main)  [recent commit]
+Author: abc
+Date:   Sun Mar 24 21:14:12 2024 +0530
+
+    added number line in py
+
+commit <commit id> (origin/main, origin/HEAD)
+Author: abc
+Date:   Sun Mar 24 21:10:31 2024 +0530
+
+    README.md
