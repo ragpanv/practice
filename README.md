@@ -18,7 +18,7 @@ git difftool README.md -- to see changes done in file
 -- to come out of vimdiff changes, type :qa (come out without saving)
 
 ### undoing the changes
-#### undoing uncommited changes
+#### undoing uncommited changes (file which are not staged)
 
 - In first.py add println(1) and undo it.
 on git status ->  (use "git add <file>..." to update what will be committed)
@@ -30,5 +30,7 @@ on git status ->  (use "git add <file>..." to update what will be committed)
 
     git status - show no changes as it is undone
 
-- if multiple files are changed, to undo it use . as git restore .
+- if multiple files are changed, to undo it use . as 
+    git restore .
     git restore first.py README.md
+    git checkout -- first.py README.md
