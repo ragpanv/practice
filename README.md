@@ -39,7 +39,7 @@ on git status ->  (use "git add <file>..." to update what will be committed)
 #### undoing uncommited changes (file which are staged, file that are shown in green) i.e. after git add
 
 git add first.py
----
+
  $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -52,12 +52,11 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         modified:   README.md
----
 
 
 git restore --staged first.py  --> first.py will be moved to unstaged area as below
 
----
+
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -68,7 +67,7 @@ Changes not staged for commit:
         modified:   first.py
 
 no changes added to commit (use "git add" and/or "git commit -a")
----
+
 
 again user add cmd to add the required files to stagin area
 $ git add README.md
