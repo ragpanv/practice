@@ -113,13 +113,13 @@ Date:   Sun Mar 24 21:28:26 2024 +0530
 
 
 
-if you want to just revert it ( commit when ever you want explicitly)
-git revert -n commit_id ---> this reverts it and keep the previous latest in stagin area as below
+if you want to just revert it ( commit whenever you want explicitly)
+git revert -n commit_id ---> this reverts it and keep the previous latest in staging area 
 
 git commit -m '' -- to commit it if needed
 
-
-if you want to go to specific changes (asking age commit is needed)
+### rest
+if you want to go to specific changes (asking age -commit is needed)
 git reset --hard commit id
 HEAD is now at xxxxxxx asking age
 
