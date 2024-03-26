@@ -22,3 +22,6 @@ $ git branch
 
 we are in 'growth' branch, the changes made from now will be stored in growth branch (not in main branch)
 make change to first.py -> then commit
+- move to main branch 
+
+
