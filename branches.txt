@@ -1,0 +1,24 @@
+branches - to preserve original code / data and make changes in its another version
+* we can do parallel development
+* try diff things and merge them afterwards if needed
+
+
+#### list all branches (shows the list of branches that we have)
+git branch
+
+#### create new branch
+git branch growth
+
+$ git branch
+  growth
+* main -> active branch
+
+#### switch to other branch
+git chekout growth
+
+$ git branch
+* growth
+  main
+
+we are in 'growth' branch, the changes made from now will be stored in growth branch (not in main branch)
+make change to first.py -> then commit
