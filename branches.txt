@@ -70,5 +70,19 @@ when we are in "growth" branch - it points to "ref: refs/heads/growth"
 when HEAD is not pointing to most recent commit, we go into "detached HEAD" state
 
 git checkout <commitId2> [now we are in detached HEAD state as it in not pointing to recent commit]
+---
+$ git checkout commitid
+Note: switching to 'commitid'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+---
+
+$ git branch
+* (HEAD detached at xxxxxxx)
+  growth
+  main
 
 git checkout main [back to main branch, HEAD state]
+
