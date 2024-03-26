@@ -16,6 +16,9 @@ $ git branch
 #### switch to other branch
 git chekout growth
 
+### create a branch and checkout the branch
+git checkout -b test
+
 $ git branch
 * growth
   main
@@ -32,6 +35,40 @@ to merge you have to be on main branch
 git merge growth -> merges growth branch into active (main) branch
 
 
-- move to main branch 
+-- do what ever changes is needed
+
+### push changes to github (upstream) (to push the branch, switch to that branch)
+git checkout growth
+git push -> show the cmd to run i.e. 
+=>[ git push --set-upstream origin growth ]
+
+### delete a branch
+(switch to main branch and run delete cmd) [-d => to delete]
+git branch -d test
 
 
+## HEAD
+### head is reference to most recent commit in current branch
+git show HEAD -- show recent commit (shows difference as well)
+git show <recent commit id> -- HEAD is shorthand of recent commit id
+
+
+### to check differences in commit
+eg 
+commitId1  at 9:15  HEAD
+commitId2  at 9:05  HEAD~1
+commitId3  at 8:23  HEAD~2
+git difftool <commit id2> <commit i1> 
+same as
+git difftool HEAD~1 HEAD
+
+
+*** in .git folder, we have file name HEAD
+when we are in "main" branch - it points to "ref: refs/heads/main"
+when we are in "growth" branch - it points to "ref: refs/heads/growth"
+
+when HEAD is not pointing to most recent commit, we go into "detached HEAD" state
+
+git checkout <commitId2> [now we are in detached HEAD state as it in not pointing to recent commit]
+
+git checkout main [back to main branch, HEAD state]
