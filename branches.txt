@@ -32,5 +32,6 @@ to merge you have to be on main branch
 git merge growth -> merges growth branch into active (main) branch
 
 
+- move to main branch 
 
 
