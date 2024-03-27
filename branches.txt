@@ -101,3 +101,8 @@ eg: dummmy.txt (file) and dummy/ (folder) - which we don't want to track
     dummmy.txt
 4. we need to keep staging gitignore file when we make changes as it will show in unstaged afterwards
  but gitignore will take care of those added folders and files (it will be ignored)
+
+
+ ### merge
+ make different changes in local and github and then
+ $git pull

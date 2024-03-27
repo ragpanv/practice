@@ -13,10 +13,12 @@ we haven't pushed these changes to remote server (i.e. github here)
 
 git push -- to push changes in remote server
 
-git difftool README.md -- to see changes done in file
+git difftool README.md -- to see the changes done in file
 -- it asks to launching for 'vimdiff' if difftool is not configured
 -- to come out of vimdiff changes, type :qa (come out without saving)
 
+git difftool origin/main (shows diff b/w github and your local)
+it difftool  (shows uncommited changes and head)
 ### undoing the changes
 #### undoing uncommited changes (file which are not staged, files are shown in red) i.e. before git add
 
@@ -124,3 +126,6 @@ git reset --hard commit id
 HEAD is now at xxxxxxx asking age
 
 $ git log (now the latest commit is asking age, commits done after this are gone now)
+
+
+
